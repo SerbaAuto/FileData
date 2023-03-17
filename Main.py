@@ -9,7 +9,9 @@ import mysql.connector
 #st.cache_resource
 def init_connection():
     st.write("Lewat")
-    return mysql.connector.connect(user = st.secrets['mysql']['user'],password=st.secrets['mysql']['password'],host=st.secrets['mysql']['host'],database=st.secrets['mysql']['database'])
+    return mysql.connector.connect(**st.secrets['mysql'])
+       
+       
 conn = init_connection()
 #st.cache_data(ttl=600)
 
