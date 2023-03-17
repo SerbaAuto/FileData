@@ -5,7 +5,7 @@ import numpy as np
 import mysql.connector
 
 def init_connection():
-    return mysql.connector.connect(**st.secrets["mysql"])
+    return mysql.connector.connect(**st.secrets[""])
 
 conn = init_connection()
 
