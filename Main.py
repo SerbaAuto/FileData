@@ -8,7 +8,8 @@ import mysql.connector
 #st.write("DB username:",st.secrets["mysql"]["host"])
 st.cache_resource
 def init_connection():
-     return mysql.connector.connect(st.secrets['mysql']['user'],st.secrets['mysql']['password'],st.secrets['mysql']['host'],st.secrets['mysql']['database'])
+    st.write("Lewat")
+    return mysql.connector.connect(st.secrets['mysql']['user'],st.secrets['mysql']['password'],st.secrets['mysql']['host'],st.secrets['mysql']['database'])
 
 conn = init_connection()
 st.cache_data(ttl=600)
