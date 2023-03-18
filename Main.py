@@ -13,4 +13,4 @@ df = pd.read_csv(st.secrets['public_gsheet_csv'])
 
 # Print results.
 for row in df.itertuples():
-    st.write(row.id,row.name)
+    st.write(row.id)
