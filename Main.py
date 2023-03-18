@@ -13,4 +13,4 @@ df = pd.read_csv(st.secrets['public_gsheet_csv'])
 
 # Print results.
 for row in df.itertuples():
-    st.write(f"{row.id} has a :{row.name}:")
+    st.write(row.id,row.name)
