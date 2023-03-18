@@ -4,13 +4,13 @@ import mysql.connector
 # Initialize connection.
 # Uses st.cache_resource to only run once.
 
-st.write(['mysql']['host'])
+st.write(st.secrets['mysql']['host'])
 mydb = mysql.connector.connect(
-        host=['mysql']['host'],
-        user=['mysql']['user'],
-        password=['mysql']['password'],
-        database= ['mysql']['database'],
-        port = ['mysql']['port']
+        host=st.secrets['mysql']['host'],
+        user=st.secrets['mysql']['user'],
+        password=st.secrets['mysql']['password'],
+        database= st.secrets['mysql']['database'],
+        port = st.secrets['mysql']['port']
     )
 
 mycursor = mydb.cursor()
