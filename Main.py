@@ -4,7 +4,7 @@ import mysql.connector
 # Initialize connection.
 # Uses st.cache_resource to only run once.
 
-
+st.write(['mysql']['host'])
 mydb = mysql.connector.connect(
         host=['mysql']['host'],
         user=['mysql']['user'],
