@@ -19,7 +19,7 @@ def init_connection():
     mydb = mysql.connector.connect(**st.secrets["mysql"])
 
 
-st.write(init_connection())
+init_connection()
 st.write("bisa")
 
 # Perform query.
