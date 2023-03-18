@@ -12,13 +12,15 @@ st.write(st.secrets['mysql']['host'])
 #         database= st.secrets['mysql']['database'],
 #         port = st.secrets['mysql']['port']
 #     )
-
+st.write("Lewat")
+st.error("error")
 # mycursor = mydb.cursor()
 def init_connection():
     mydb = mysql.connector.connect(**st.secrets["mysql"])
-    if(mydb): return 1
-    return 0
-st.write(init_connection())
+
+
+#st.write(init_connection())
+st.write("bisa")
 
 # Perform query.
 # Uses st.cache_data to only rerun when the query changes or after 10 min.
