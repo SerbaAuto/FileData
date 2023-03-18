@@ -6,7 +6,7 @@ import mysql.connector
 
 
 mydb = mysql.connector.connect(
-        host=['mysql']['localhost'],
+        host=['mysql']['host'],
         user=['mysql']['user'],
         password=['mysql']['password'],
         database= ['mysql']['database']
